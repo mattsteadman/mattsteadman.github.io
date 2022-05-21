@@ -6,8 +6,6 @@ categories: [R]
 permalink: fd-and-streams
 description: "What's the difference between file descriptors and streams?"
 ---
-# File Descriptor and Stream
-
 Unix has two similar concepts for reading and writing file-like objects. The first, file descriptors, is used by lower-level functions like `read(2)`. The second, streams, is used by higher-level functions like `fprintf(3)`. So what are the similarities and differences between them?
 
 - File descriptors are represented by objects of type `int`. Streams are represented by objects of type `FILE *`.

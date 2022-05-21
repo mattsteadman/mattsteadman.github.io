@@ -6,7 +6,6 @@ categories: [databases]
 permalink: the-c-in-acid
 description: "What does the C in ACID mean?"
 ---
-
 If you're anything like me, at some point you've had the following thought:
 
 > According to the CAP theorem, some databases are consistent (CP) and some are highly available (AP). How do I know which are which? Well, a database that supports ACID transactions must be consistent. After all, it's right there in the C of ACID!
