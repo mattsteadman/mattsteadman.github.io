@@ -4,4 +4,4 @@ title: About
 permalink: /about/
 ---
 
-This is matt's blog.
+This is a weblog where I keep notes about programming.
