@@ -1,17 +1,15 @@
 ---
 layout: post
-title:  "Why do we have interfaces?"
+title:  "Why Do We Have Interfaces?"
 date:   2022-05-21 13:30:00
 categories: [R]
 permalink: fd-and-streams
 description: "Why do we have interfaces?"
 ---
 
-# Why do we have interfaces?
+# Why Do We Have Interfaces?
 
-This might seem obvious to someone who spends a lot of time doing object-oriented programming, but I remember this being confusing for me at one point. 
-
-In most major OO languages like C++, Java, and C#, there are two similar features: interfaces and abstract base classes. In principle, both allow you to specify the API for an object without providing implementations for any (or all) of the methods. Interfaces being basically a "fully" abstract base class, that is, an abstract base class where every method is abstract, not just some. So why would someone use an interface, which offers only a subset of the functionality of an abstract base class?
+In most major object-oriented languages like C++, Java, and C#, there are two similar features: interfaces and abstract base classes. In principle, both allow you to specify the API for an object without providing implementations for any (or all) of the methods. Interfaces being basically a "fully" abstract base class, that is, an abstract base class where every method is abstract, not just some. So why would someone use an interface, which offers only a subset of the functionality of an abstract base class?
 
 Abstract base classes are a feature of C++, Java and C#, while interfaces are only available in Java and C#. Java and C# also happen to be the only two of these three languages to only support single, not multiple, inheritance. Interfaces are used in Java and C# to get around the limitations of single inheritance. If you want an object to implement multiple interfaces, only one of them can come from a base class, the others must be from interfaces.
 
