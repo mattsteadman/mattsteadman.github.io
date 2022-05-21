@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "File Descriptors and Streams"
-date:   2022-05-21 11:30:00
+date:   2022-05-21 13:30:00
 categories: [R]
 permalink: fd-and-streams
 description: "What's the difference between file descriptors and streams?"
@@ -31,9 +31,8 @@ Unix has two similar concepts for reading and writing file-like objects. The fir
 - In general try using a stream before deciding that you need to use a file descriptor unless you have a good reason to do otherwise.
 
 - File descriptors are a POSIX feature, whereas streams are an ISO C feature. Therefore, streams are more portable than file descriptors. Non-POSIX systems are free to implement streams using something besides file descriptors under the hood.
-  - File descriptors are implemented within the kernel of unix-like systems. The standard library gives you access to the system call interface, so that's why it includes the file descriptor concept. Streams are a concept invented by the standard C library to give you access to a simple parser for the most common kinds of I/O (using `printf` and `scanf`).
+  - File descriptors are implemented in kernelspace. Streams are implemented in userspace to make the most common kinds of I/O easier.
 
-
-- *File position* is one of the attributes of a file. Therefore, streams and file descriptors (which both provide communication channels to files) both have file position as one of their attributes. File position on a stream can be changed with the `fseek` function, and file position on a file descriptor can be changed using the `lseek` function.
-    - File position on a file descriptor is just an integer which is initialized to 0 and incremented with each written character.
+- *File position* is one of the attributes of a file. Therefore, streams and file descriptors (which both provide communication channels to files) both have file position as one of their attributes. File position on a stream can be changed with `fseek(3)`, and file position on a file descriptor can be changed using `lseek(2)`.
+    - File position on a file descriptor is just an integer which is initialized to `0` and incremented with each written character.
     - Not all files support random-access (this is, the seek operation). You will receive the error `ESPIPE` ("error due to seeking on a pipe [or socket or FIFO]").
