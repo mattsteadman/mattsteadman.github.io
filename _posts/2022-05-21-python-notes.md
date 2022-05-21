@@ -47,3 +47,5 @@ I've recently been learning a lot about Python. Here are some interesting things
 
 - Use `@dataclasses.dataclass` if you want to define a struct-like class.
 	- For simple structs that don't need field names, just use tuples.
+
+- Python technically supports both constructors and destructors with `.__init__()` and `.__del__()`, but it's more common to use context managers if you need to abstract away cleanup code.
