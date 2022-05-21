@@ -15,7 +15,7 @@ But, like me, you would be wrong.
 
 The C in CAP refers to consistency between nodes in a multi-node system. However, the C in ACID can apply to single-node relational databases. 
 
-In chapter 7 of *Designing Data-Intensive Systems*, Martin Kleppmann distinguishes between the C in CAP, which is sometimes referred to as *linearizability*, and the C in ACID, which is about *maintaining invariants* in your data, such as the balancing of credits and debits in an accounting system. Check out [this](http://jepsen.io/consistency) diagram if you want to understand how complicated things can really get. The two most important terms are linearizability (CAP consistency) and serializability, which I believe is equivalency to the strongest version of ACID isolation.
+In chapter 7 of *Designing Data-Intensive Systems*, Martin Kleppmann distinguishes between the C in CAP, which is sometimes referred to as *linearizability*, and the C in ACID, which is about *maintaining invariants* in your data, such as the balancing of credits and debits in an accounting system. Check out [this](http://jepsen.io/consistency) diagram if you want to understand how complicated things can really get. The two most important terms are linearizability (CAP consistency) and serializability, which I believe is equivalent to the strongest version of ACID isolation.
 
 In contrast to linearizability, invariant maintenance isn't actually something that databases can enforce most of the time. While it's an important property of many data systems, it's often something that has to be enforced at the application level rather than the database level. The exceptions referential integrity constraints and unique constraints, which databases can enforce. Ultimately, Kleppmann concludes that
 
