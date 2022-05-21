@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "The C in ACID"
-date:   2022-05-21 10:30:00
+date:   2021-11-16
 categories: [databases]
 permalink: the-c-in-acid
 description: "What does the C in ACID mean?"
