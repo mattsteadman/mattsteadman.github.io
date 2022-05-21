@@ -1,0 +1,40 @@
+---
+layout: post
+title:  "R Namespaces and Environments"
+date:   2022-05-21 11:30:00
+categories: [R]
+permalink: r-namespaces-and-environments
+description: "How does name resolution work in R?"
+---
+
+# R Namespaces and Environments
+
+R has a peculiar way of resolving names within packages.This confused me when I first started developing R packages, because similar code would behave differently in packages and in scripts.
+
+The R search path within a package can be divided into two halves: The package-specfic part and the global part.
+
+## The Package-Specific Part 
+
+When you use a name inside of a package in R, the first place that R will look for it is within the package itself. It will check, in this order:
+- The Package Namespace: within the package proper (i.e., the source code that you wrote)
+- The Imports Environment: within one of the packages included in the `Imports:` or `Depends:` sections of the `DESCRIPTION`
+- The Base Namespace: This is a special environment which is basically just a copy of the base environment. It's included here to allow you to use base functions without qualifying them with `base::`.
+
+## The Global Part
+
+Now, if the name isn't found in any of these places we will search the environment where the package was called. This means searching:
+- The Global Environment
+- The Package Environments of attached packages: meaning symbols that they export, not their internal search paths
+- The Base Package Environment: This will never be used from within a package, because you will get a hit in the Base Namespace first, but it's included because it's part of the search path used by scripts.
+
+You can see how this would work from within the `stats` package here:
+
+![R packages](/img/r-packages.png)
+
+To quote from the R Internals document:
+> Namespaces are environments associated with packages (and once again the base package is special and will be considered separately). A package `pkg` defines two environments `namespace:pkg` and `package:pkg`: it is `package:pkg` that can be attached and form part of the search path.
+> 
+> The objects defined by the R code in the package are symbols with bindings in the `namespace:pkg` environment. The `package:pkg` environment is populated by selected symbols from the `namespace:pkg` environment (the exports). The enclosure of this environment is an environment populated with the explicit imports from other namespaces, and the enclosure of *that* environment is the base namespace. (So the illusion of the imports being in the namespace environment is created via the environment tree.) The enclosure of the base namespace is the global environment, so the search from a package namespace goes via the (explicit and implicit) imports to the standard 'search path'.
+>
+> The base namespace environment `R_BaseNamespace` is another `ENVSXP` that is special-cased. It is effectively the same thing as the base environment `R_BaseEnv` except that its enclosure is the global environment rather than the empty environment: the internal code diverts lookups in its frame to the global symbol table. 	
+
