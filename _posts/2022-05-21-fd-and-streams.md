@@ -16,22 +16,22 @@ Unix has two similar concepts for reading and writing file-like objects. The fir
 
 - Both can represent connections to files, devices (e.g terminals), and pipes/sockets (for IPC).
 
-- Why use streams? Because using streams gives you access to a more powerful set of functions. Namely, formatted I/O functions like `printf` and `scanf`, and functions for character- and line-oriented I/O.
+- Why use streams? Because using streams gives you access to a more powerful set of functions. Namely, formatted I/O functions like `printf` and `scanf`. These functions have provide two main benefits:
+  - They save you from having to write ad-hoc parsers reading and writing strings dynamically
+  - They avoid repetitive system calls through buffered
 
-- If you want to do control operations that are specific to a particular device, then you *must* use file descriptors.
+- Why use file descriptors? They offer more control what and when you read and write:
+  - They allow you to do control operations that are specific to particular devices
+  - They let you use special modes of I/O, like nonblocking I/O
+  - The only control that streams give you is the choice of styles of buffering (unbuffered, line buffered, fully buffered).
 
-- If you need special modes of I/O (e.g. nonblocking input) then you must use file descriptors.
+- You can always change your mind:
+  - You can request that a streams give you the underlying file descriptor for low-level operations
+  - You can create a stream from an existing a file descriptor
 
-- The only control that streams give you is the choice of styles of buffering (unbuffered, line buffered, fully buffered).
+- In general, try to use streams unless you have a reason to do otherwise
 
-- If you want, you can request that a streams gives you the file descriptor that it's using under the hood so that you can "get dirty" and do some low-level operations.
-
-- You can also "upgrade" a file descriptor to a stream. That is, create a new stream with an existing file descriptor.
-
-- In general try using a stream before deciding that you need to use a file descriptor unless you have a good reason to do otherwise.
-
-- File descriptors are a POSIX feature, whereas streams are an ISO C feature. Therefore, streams are more portable than file descriptors. Non-POSIX systems are free to implement streams using something besides file descriptors under the hood.
-  - File descriptors are implemented in kernelspace. Streams are implemented in userspace to make the most common kinds of I/O easier.
+- File descriptors are a POSIX feature, whereas streams are an ISO C feature. Therefore, streams are more portable than file descriptors. Non-POSIX systems are free to implement streams using something besides file descriptors under the hood. Streams live in the kernel, while streams live in C standard library.
 
 - *File position* is one of the attributes of a file. Therefore, streams and file descriptors (which both provide communication channels to files) both have file position as one of their attributes. File position on a stream can be changed with `fseek(3)`, and file position on a file descriptor can be changed using `lseek(2)`.
     - File position on a file descriptor is just an integer which is initialized to `0` and incremented with each written character.
