@@ -1,0 +1,18 @@
+# Site settings
+title: matt's programming blog
+email: matt@mattsteadman.co
+description: > # this means to ignore newlines until "baseurl:"
+    A blog about technology and programming
+#baseurl: # the subpath of your site, e.g. /blog/
+url: "https://www.mattsteadman.co" # the base hostname & protocol for your site
+twitter_username: saminiir
+github_username:  mattsteadman
+
+# Build settings
+markdown: kramdown
+
+navigation:
+  - title: Home
+    url: /index.html
+  - title: About
+    url: /about.html
