@@ -10,15 +10,16 @@ description: "Some interesting things I've learned about Python recently"
 
 I've recently been learning a lot about Python. Here are some interesting things I've learned recently.
 
-- What's the difference between `@classmethod` and `@staticmethod`? `@classmethod` gets the it's class (`cls`) as implicit first argument. This means that it can modify class state if it wants. Static methods doesn't get it's class as an argument.
+- What's the difference between `@classmethod` and `@staticmethod`? `@classmethod` gets the it's class (`cls`) as implicit first argument. This means that it can modify class state if it wants. Static methods can't do this.
 
 - Python supports generic function in the style of R S3 methods through the `@singledispatch` decorator.
 
 - If you need to iterate through something in reverse, use `reversed()`.
 
-- If you need to iterate through two things at once, use `zip()`. It will stop iterator when the smaller of the two iterators stops.
+- If you need to iterate through two things at once, use `zip()`. It will stop the iteration when the smaller of the two iterators stops.
+	- You can pass a `zip` object to the dictionary constructor like this: `dict(zip(a, b))` to make a dictionary with keys from `a` and corresponding values from `b`.
 
-- The general term for a piece of data that singles end of data, like a `\0` terminator in C, is a sentinel value. Notice that this is an example of old-style in-band signalling, rather than new-style out-of-band signalling, like an extra attribute (size) or exception (`StopIteraton`).
+- The general term for a piece of data that signals the end of data (like a `\0` terminator in C) is a *sentinel value*. Notice that this is an example of old-style in-band signalling, rather than new-style out-of-band signalling, like an extra attribute (size) or exception (`StopIteraton`).
 	- In python, you can automatically convert an sentinel value to a `StopIteration` by passing it as the second argument to `iter()`.
 
 - Partial function application is easy in Python. Just use `functools.partial()`.
