@@ -16,3 +16,5 @@ navigation:
     url: /index.html
   - title: About
     url: /about/
+
+theme: jekyll-theme-minimal
