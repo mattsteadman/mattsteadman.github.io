@@ -6,21 +6,6 @@
   <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
   <meta name="description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
-  <!-- Twitter Card data -->
-  <meta name="twitter:card" value="summary"> 
-  <meta name="twitter:site" content="@saminiir">
-{% if page.title %}
-  <meta name="twitter:title" content="{{ page.title }}">
-{% else %}
-  <meta name="twitter:title" content="{{ site.title }}">
-{% endif %}
-{% if page.description %}
-  <meta name="twitter:description" content="{{ page.description }}">
-{% else %}
-  <meta name="twitter:description" content="{{ site.description }}">
-{% endif %}
-  <meta name="twitter:creator" content="@saminiir">
-
   <meta content="{{ site.title }}" property="og:site_name">
 {% if page.title %}
   <meta content="{{ page.title }}" property="og:title">
@@ -54,7 +39,7 @@
   <meta content="{{ tag }}" property="article:tag">
   {% endfor %}
 {% endif %}
-  <meta content="http://www.saminiir.com/img/logo2.png" property="og:image">
+  <meta content="http://www.mattsteadman.co/img/logo2.png" property="og:image">
 
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">

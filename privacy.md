@@ -5,7 +5,7 @@ permalink: /privacy
 ---
 
 
-The Site "saminiir.com" itself does not collect or analyze personal information.
+The Site "mattsteadman.co" itself does not collect or analyze personal information.
 
 The Site uses Google Analytics as a third party traffic analytics service. The service is only used to monitor the usage level and content popularity of the Site. Advertising features are turned off and not used. The Site has no access to personally identifiable information, such as IP addresses. See their [privacy notice](https://policies.google.com/privacy).
 

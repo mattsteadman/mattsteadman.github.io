@@ -4,4 +4,4 @@ title: About
 permalink: /about/
 ---
 
-Yet Another Hacker Blog (YAHB).
+This is matt's blog.
