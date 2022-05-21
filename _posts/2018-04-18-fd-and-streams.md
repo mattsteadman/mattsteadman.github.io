@@ -15,13 +15,12 @@ Unix has two similar concepts for reading and writing file-like objects. The fir
 - Both can represent connections to files, devices (e.g terminals), and pipes/sockets (for IPC).
 
 - Why use streams? Because using streams gives you access to a more powerful set of functions. Namely, formatted I/O functions like `printf` and `scanf`. These functions have provide two main benefits:
-  - They save you from having to write ad-hoc parsers reading and writing strings dynamically
-  - They avoid repetitive system calls through buffered
+  - They save you from having to write ad-hoc parsers for reading and writing strings dynamically
+  - They save you system calls by using buffered I/O
 
 - Why use file descriptors? They offer more control what and when you read and write:
   - They allow you to do control operations that are specific to particular devices
-  - They let you use special modes of I/O, like nonblocking I/O
-  - The only control that streams give you is the choice of styles of buffering (unbuffered, line buffered, fully buffered).
+  - They let you use special modes of I/O, like nonblocking I/O. By contrast, the only control that streams give you is the choice of styles of buffering (unbuffered, line buffered, fully buffered).
 
 - You can always change your mind:
   - You can request that a streams give you the underlying file descriptor for low-level operations
