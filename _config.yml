@@ -5,6 +5,10 @@ url: "https://mattsteadman.co"
 github_username:  mattsteadman
 
 markdown: kramdown
+highlighter: rouge
+kramdown:
+    input: GFM
+    syntax_highlighter: rouge
 
 navigation:
   - title: Home
