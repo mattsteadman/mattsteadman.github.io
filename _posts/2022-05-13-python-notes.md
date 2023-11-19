@@ -8,7 +8,7 @@ description: "Some interesting things I've learned about Python recently"
 ---
 I've recently been learning a lot about Python. Here are some interesting things I've learned recently.
 
-- What's the difference between `@classmethod` and `@staticmethod`? `@classmethod` gets the it's class (`cls`) as implicit first argument. This means that it can modify class state if it wants. Static methods can't do this.
+- What's the difference between `@classmethod` and `@staticmethod`? `@classmethod` gets it's class (`cls` by convention) as implicit first argument. This means that it can modify class state if it wants. Static methods can't do this.
 
 - Python supports generic function in the style of R S3 methods through the `@singledispatch` decorator.
 
