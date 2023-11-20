@@ -28,7 +28,7 @@ Unix has two similar concepts for reading and writing file-like objects. The fir
 
 - In general, try to use streams unless you have a reason to do otherwise
 
-- File descriptors are a POSIX feature, whereas streams are an ISO C feature. Therefore, streams are more portable than file descriptors. Non-POSIX systems are free to implement streams using something besides file descriptors under the hood. Streams live in the kernel, while streams live in C standard library.
+- File descriptors are a POSIX feature, whereas streams are an ISO C feature. Therefore, streams are more portable than file descriptors. Non-POSIX systems are free to implement streams using something besides file descriptors under the hood. File descriptors live in the kernel, while streams live in C standard library.
 
 - *File position* is one of the attributes of a file. Therefore, streams and file descriptors (which both provide communication channels to files) both have file position as one of their attributes. File position on a stream can be changed with `fseek(3)`, and file position on a file descriptor can be changed using `lseek(2)`.
     - File position on a file descriptor is just an integer which is initialized to `0` and incremented with each written character.
