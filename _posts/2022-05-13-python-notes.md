@@ -2,7 +2,7 @@
 layout: post
 title:  "Python Notes"
 date:   2022-05-13
-categories: [programming, notes]
+categories: [programming, python]
 permalink: Python-notes
 description: "Some interesting things I've learned about Python recently"
 ---

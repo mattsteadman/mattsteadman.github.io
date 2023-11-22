@@ -2,7 +2,7 @@
 layout: post
 title:  "File Descriptors and Streams"
 date:   2018-04-18
-categories: [R]
+categories: [operating-systems]
 permalink: fd-and-streams
 description: "What's the difference between file descriptors and streams?"
 ---

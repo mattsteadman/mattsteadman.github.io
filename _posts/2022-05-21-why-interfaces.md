@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "Why Do We Have Interfaces?"
-date:   2022-05-21 17:00:00
-categories: [R]
+date:   2022-05-21
+categories: [programming]
 permalink: why-interfaces
 description: "Why do we have interfaces?"
 ---
