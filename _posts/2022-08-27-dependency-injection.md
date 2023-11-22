@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Dependency Injection"
-date:   2023-08-27
+date:   2022-08-27
 categories: [programming]
 permalink: dependency-injection
 description: "Dependency Injection"
