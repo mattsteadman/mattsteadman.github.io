@@ -8,9 +8,9 @@ description: "The Many Parameters of Op-Amps"
 ---
 
 When I was first learning about electronics, one of the things I remember being fascinated by was the many ways in which op-amps could vary. In their ideal form, op-amps seem like such pretty simple devices: they amplify the difference between their two inputs. But in practice, this turns out to be a very leaky abstraction. There are many assumptions about the ideal op-amp that never hold in practice:
-- **Open-loop gain:** It turns out that in practice it's hard to build an op-amp with infinite gain, but many real op-amps have reasonably large gains. In either case, it rarely matters because you're using an op-amp in a closed-loop configuration.
-- **Input impedance:** Because of the capacitive coupling inherent to the design of MOSFETs (not to mention leakage current), it turns out that assuming you have infinite input impedance is unrealistic.
-- **Output impedance:** Similarly, the output of an op-amp isn't a perfect voltage source and has some amount of output impedance.
+- _Open-loop gain:_ It turns out that in practice it's hard to build an op-amp with infinite gain, but many real op-amps have reasonably large gains. In either case, it rarely matters because you're using an op-amp in a closed-loop configuration.
+- *Input impedance:* Because of the capacitive coupling inherent to the design of MOSFETs (not to mention leakage current), it turns out that assuming you have infinite input impedance is unrealistic.
+- __Output impedance:__ Similarly, the output of an op-amp isn't a perfect voltage source and has some amount of output impedance.
 - **Input offset voltage:** It turns out that the input voltage that produces an output of 0 V isn't actually 0 V, there's always some voltage difference needed to actually get to 0.
 - **Input current:** Because of leakage current of your MOSFETs, a certain amount of current will flow into your inputs. It's assumed to be zero, but it's not.
 - **Common-mode rejection ratio:** We assume that a signal that appears equally on both input will produce no output, but actually the ability of an op-amp to reject common signals varies. This is measured by a parameter called common-mode rejection ratio (CMRR).
