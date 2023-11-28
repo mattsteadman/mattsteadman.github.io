@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "What's Relational About Relational Databases?"
-date:   2023-11-28
+date:   2021-04-28
 categories: [databases]
 permalink: relational
 description: "What's Relational About Relational Databases?"
