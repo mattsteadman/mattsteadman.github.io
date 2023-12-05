@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "The Boyer–Moore majority vote algorithm"
+title:  "The Boyer–Moore Majority Vote Algorithm"
 date:   2023-12-05
 categories: [algorithms]
 permalink: majority-vote
