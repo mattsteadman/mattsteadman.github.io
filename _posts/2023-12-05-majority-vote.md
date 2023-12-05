@@ -7,4 +7,4 @@ permalink: majority-vote
 description: "The Boyer–Moore majority vote algorithm"
 ---
 
-There's an interesting streaming algorithm called the Boyer–Moore majority vote algorithm.
+Let's say you have a stream of elements of unbounded size. You know that one element appears a majority of times. Can you find that majority element in linear time using constant memory? There's an interesting algorithm to do this called the Boyer–Moore majority vote algorithm. 
