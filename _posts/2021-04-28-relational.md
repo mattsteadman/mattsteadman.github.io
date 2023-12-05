@@ -29,7 +29,7 @@ So how does this relate to databases? Well, relations in the context of database
 }
 ```
 
-What is this starting to look like? A table! What do relational databases store? Tables! The reason that relational databases are relational is because their data model is based around tables. In other words, the simplest definition of relation is *table*. It just so happens that relations can have relationships with other relations, but this isn't  why a relational database is relational.
+What is this starting to look like? A table! What do relational databases store? Tables! The reason that relational databases are relational is because their data model is based around tables. In other words, the simplest definition of relation in the context of databases is *table*. It just so happens that relations can have relationships with other relations, but this isn't  why a relational database is relational.
 
 So a better first sentence in Oracle's documentation would be:
 
