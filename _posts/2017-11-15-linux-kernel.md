@@ -34,7 +34,7 @@ Don't listen to the GNU coding standards.
 8. Remember to comment data. Comments on algorithms should explain *what* the code does, not *how* it does it. If you need a comment to explain how your code works, rewrite your code. Comments should go *outside* of functions. If you need to comment different parts of your functions separately, break your function into multiple functions. Consider also saying *why* your function does what it does.
 
 Multi-line comments look like this:
-```c
+{% highlight c %}
 /*
  * This is the preferred style for multi-line
  * comments in the Linux kernel source code.
@@ -43,17 +43,17 @@ Multi-line comments look like this:
  * Description:  A column of asterisks on the left side,
  * with beginning and ending almost-blank lines.
  */
-```
+{% endhighlight %}
 
 For files in `net/` and `drivers/net/`, comments look like this:
-```c
+{% highlight c %}
 /* The preferred comment style for files in net/ and drivers/net
 * looks like this.
 *
 * It is nearly the same as the generally preferred comment style,
 * but there is no initial almost-blank line.
 */
-```
+{% endhighlight %}
 
 9. Don't use emacs / indent defaults.
 
@@ -76,10 +76,10 @@ For files in `net/` and `drivers/net/`, comments look like this:
 18. Some editors like emacs and vim allow you to embed configuration information for a source file in the file itself (like `/* vim:set sw=8 noet */`). Don't include these in source files.
 
 19. Don't use inline assembly if C will do, you can poke hardware with C. Consider wrapping assembly in helper functions and making use of C parameters. Large assembly functions should go in .S files, and C prototypes for these functions should be declared in C header files with the `asmlinkage` tag. You might need mark `asm` statements as `volatile` to prevent the complier from optimizing them away, but only do this if you know you need to otherwise it messes with optimization. Make use of the compiler's automatic concatenation of adjacent strings for multiple assembly instructions in a single `asm` statement. Separate them with a newline like this:
-```c
+{% highlight c %}
 asm ("magic %reg1, #42\n\t"
      "more_magic %reg2, %reg3"
      : /* outputs */ : /* inputs */ : /* clobbers */);
-```
+{% endhighlight %}
 
 20. Don't use preprocessor conditionals in .c files if you can avoid it. Instead, conditionally define no-op versions of functions in header files and call these functions unconditionally in .c files. The compilers will optimize away these no-op functions, so the generated code is identical. Put code that gets conditionally compiled into it's own function for this purpose. If a compiler is warning you about a function that's unused in a certain configuration, mark it as `__maybe_unused` instead of using preprocessor conditionals.
