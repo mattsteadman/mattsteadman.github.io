@@ -30,7 +30,7 @@ I've been learning a lot about Python recently. Here are some interesting things
 
 - If you find yourself adding/removing items from the beginning of a list with `del`, `.pop(0)` or `.insert(0, item)`, then you should be using a `deque`.
 
-- Use `contextlib.suppress(e)` to temporarily suppress an exception `e`.
+- Use `with contextlib.suppress(e):` to temporarily suppress an exception `e`.
 
 - To terminate a generator, never do `raise StopIteration`. This won't work anymore. Instead, simply use `return`.
 
