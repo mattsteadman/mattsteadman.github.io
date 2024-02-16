@@ -34,7 +34,7 @@ I've been learning a lot about Python recently. Here are some interesting things
 
 - To terminate a generator, never do `raise StopIteration`. This won't work anymore. Instead, simply use `return`.
 
-- "Frozen" doesn't really have a special meaning in Python aside from immutable.
+- "Frozen" (as in `frozenset()`) doesn't really have a special meaning in Python aside from immutable.
 
 - Heaps offer a similar kind of partial ordering that you get in a tournament bracket.
 
