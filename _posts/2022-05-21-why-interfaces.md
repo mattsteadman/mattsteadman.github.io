@@ -6,7 +6,7 @@ categories: [programming]
 permalink: why-interfaces
 description: "Why do we have interfaces?"
 ---
-Most object-oriented languages like C++, Java, and C#, have at least one of two somewhat similar features: interfaces and abstract classes. In principle, both allow you to specify the API for an object without providing implementations for some (or all) of the methods. Interfaces being basically a pure abstract class, that is, an abstract class where every method is abstract, not just some. So why would someone use an interface, which offers only a subset of the functionality of an abstract class?
+Most object-oriented languages like C++, Java, and C#, have at least one of two somewhat similar features: interfaces and abstract classes. In principle, both allow you to specify the API for an object without providing implementations for some (or all) of the methods. Interfaces being basically pure abstract classes, that is, abstract classes where every method is abstract, not just some. So why would someone use an interface, which offers only a subset of the functionality of an abstract class?
 
 Abstract classes are a feature of C++, Java and C#, while interfaces are only available in Java and C#. Java and C# also happen to be the only two of these three languages to only support single---not multiple---inheritance. Interfaces are used in Java and C# to get around the limitations of single inheritance. If you want an object to implement multiple APIs, only one of them can come from a base class, the others must be from interfaces.
 
