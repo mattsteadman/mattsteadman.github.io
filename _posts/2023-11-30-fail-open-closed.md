@@ -7,7 +7,7 @@ permalink: fail-open-closed
 description: "Fail Open and Fail Closed"
 ---
 
-I was reading about rate limiters today, and the issue of behavior under failure came up. There are two main failure modes: fail open and fail closed. These terms seem like intuitive ways of describing how traffic flows during a rate limiter failure. And of course, it's not hard to figure out what term means what, right?
+I was reading about rate limiters today, and the issue of behavior under failure came up. There are two main failure modes: fail open and fail closed. These terms seem like intuitive ways of describing how traffic flows during a rate limiter failure: either it flows or it doesn't. And it's not hard to figure out what term means what, right?
 
 Well that's what I thought. It seemed to me like *fail open* should mean that traffic *doesn't flow* during a failure---like an open circuit. And *fail closed* should mean that traffic *flows* during a failure---like a short circuit. But the terms were actually being used to mean the opposite: *fail open* means that traffic *flows*, and *fail closed* means that it *doesn't flow*. I thought that this must be a mistake, since I originally learned these terms in the context of circuits and I assumed that's where they came from. However, some Googling lead me to realize that when designing valves, the opposite terminology is used: *fail open* means that the valve is open, and allows fluid to flow, *fail closed* means that the valve is closed, and doesn't allow fluid to flow.
 
