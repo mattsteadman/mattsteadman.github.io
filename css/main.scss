@@ -45,6 +45,9 @@ $on-laptop:        800px;
 
 
 // Import partials from `sass_dir` (defaults to `_sass`)
+// Note: @import is deprecated in favor of @use, but @use doesn't support
+// cross-file placeholder selectors (%vertical-rhythm, %clearfix). Migrating
+// to @use changes CSS output order, causing reset rules to override margins.
 @import
         "base",
         "layout",
