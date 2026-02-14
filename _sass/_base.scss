@@ -1,3 +1,5 @@
+@use "variables" as *;
+
 /**
  * Reset some basic elements
  */
@@ -30,9 +32,8 @@ body {
  */
 h1, h2, h3, h4, h5, h6,
 p, blockquote, pre,
-ul, ol, dl, figure,
-%vertical-rhythm {
-    margin-bottom: $spacing-unit / 2;
+ul, ol, dl, figure {
+    @extend %vertical-rhythm;
 }
 
 
@@ -93,7 +94,7 @@ a {
     text-decoration: none;
 
     &:visited {
-        color: darken($brand-color, 15%);
+        color: $brand-color-dark;
     }
 
     &:hover {
@@ -109,7 +110,7 @@ a {
 blockquote {
     color: $grey-color;
     border-left: 4px solid $grey-color-light;
-    padding-left: $spacing-unit / 2;
+    padding-left: $half-spacing;
     font-size: 18px;
     letter-spacing: -1px;
     font-style: italic;
@@ -153,8 +154,7 @@ pre {
  * Wrapper
  */
 .wrapper {
-    max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
-    max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
+    max-width: calc(#{$content-width} - (#{$spacing-unit} * 2));
     margin-right: auto;
     margin-left: auto;
     padding-right: $spacing-unit;
@@ -162,10 +162,9 @@ pre {
     @extend %clearfix;
 
     @include media-query($on-laptop) {
-        max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
-        max-width:         calc(#{$content-width} - (#{$spacing-unit}));
-        padding-right: $spacing-unit / 2;
-        padding-left: $spacing-unit / 2;
+        max-width: calc(#{$content-width} - (#{$spacing-unit}));
+        padding-right: $half-spacing;
+        padding-left: $half-spacing;
     }
 }
 
@@ -174,14 +173,6 @@ pre {
 /**
  * Clearfix
  */
-%clearfix {
-
-    &:after {
-        content: "";
-        display: table;
-        clear: both;
-    }
-}
 
 
 
