@@ -1,7 +1,7 @@
 title: matt's programming notes
 description: >
     Notes on programming
-url: "https://mattsteadman.co"
+url: "https://mattsteadman.github.io"
 github_username:  mattsteadman
 
 markdown: kramdown
@@ -13,7 +13,5 @@ kramdown:
 navigation:
   - title: Home
     url: /index.html
-  - title: About
-    url: /about/
 
 theme: jekyll-theme-minimal
