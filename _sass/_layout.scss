@@ -1,3 +1,5 @@
+@use "variables" as *;
+
 $font-stack: inconsolata, monospace;
 
 /**
@@ -7,8 +9,6 @@ $font-stack: inconsolata, monospace;
     font-family: $font-stack;
     border-top: 5px solid $grey-color-dark;
     min-height: 56px;
-
-    // Positioning context for the mobile navigation icon
     position: relative;
 
     .wrapper {
@@ -43,13 +43,11 @@ $font-stack: inconsolata, monospace;
         line-height: $base-line-height;
         text-decoration: none;
 
-        // Gaps between nav items, but not on the first one
         &:not(:first-child) {
             margin-left: 20px;
         }
-  
-        &:hover {
 
+        &:hover {
             color: $grey-color-dark;
         }
     }
@@ -101,7 +99,7 @@ $font-stack: inconsolata, monospace;
 
 .footer-heading {
     font-size: 18px;
-    margin-bottom: $spacing-unit / 2;
+    margin-bottom: $half-spacing;
 }
 
 .contact-list,
@@ -114,57 +112,50 @@ $font-stack: inconsolata, monospace;
     font-family: $font-stack;
     border-top: 1px solid $grey-color-light;
 }
+
 .footer-col-wrapper {
     padding-top: 1.4em;
     font-size: 15px;
     color: $grey-color;
-    margin-left: -$spacing-unit / 2;
-    @extend %clearfix;
+    margin-left: -$half-spacing;
+    @include clearfix;
 }
 
 .footer-col {
     float: left;
-    margin-bottom: $spacing-unit / 2;
-    padding-left: $spacing-unit / 2;
+    margin-bottom: $half-spacing;
+    padding-left: $half-spacing;
 }
 
 .footer-col-1 {
-    width: -webkit-calc(35% - (#{$spacing-unit} / 2));
-    width:         calc(35% - (#{$spacing-unit} / 2));
+    width: calc(35% - (#{$spacing-unit} / 2));
 }
 
 .footer-col-2 {
-    width: -webkit-calc(20% - (#{$spacing-unit} / 2));
-    width:         calc(20% - (#{$spacing-unit} / 2));
+    width: calc(20% - (#{$spacing-unit} / 2));
 }
 
 .footer-col-3 {
-    width: -webkit-calc(45% - (#{$spacing-unit} / 2));
-    width:         calc(45% - (#{$spacing-unit} / 2));
+    width: calc(45% - (#{$spacing-unit} / 2));
 }
 
 @include media-query($on-laptop) {
     .footer-col-1,
     .footer-col-2 {
-        width: -webkit-calc(50% - (#{$spacing-unit} / 2));
-        width:         calc(50% - (#{$spacing-unit} / 2));
+        width: calc(50% - (#{$spacing-unit} / 2));
     }
 
     .footer-col-3 {
-        width: -webkit-calc(100% - (#{$spacing-unit} / 2));
-        width:         calc(100% - (#{$spacing-unit} / 2));
+        width: calc(100% - (#{$spacing-unit} / 2));
     }
 }
 
 @include media-query($on-palm) {
     .footer-col {
         float: none;
-        width: -webkit-calc(100% - (#{$spacing-unit} / 2));
-        width:         calc(100% - (#{$spacing-unit} / 2));
+        width: calc(100% - (#{$spacing-unit} / 2));
     }
 }
-
-
 
 /**
  * Page content
@@ -209,8 +200,6 @@ $font-stack: inconsolata, monospace;
     display: block;
     font-size: 16px;
 }
-
-
 
 /**
  * Posts

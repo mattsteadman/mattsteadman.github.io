@@ -1,0 +1,43 @@
+@use "sass:math";
+@use "sass:color";
+
+// Variables
+$base-font-family: serif;
+$base-font-size:   16px;
+$small-font-size:  $base-font-size * 0.875;
+$base-line-height: 1.5;
+
+$spacing-unit:     30px;
+$half-spacing:     math.div($spacing-unit, 2);
+
+$text-color:       #111;
+$background-color: #fdfdfd;
+$brand-color:      #2a7ae2;
+$brand-color-dark: color.adjust($brand-color, $lightness: -15%);
+
+$grey-color:       #828282;
+$grey-color-light: color.adjust($grey-color, $lightness: 40%);
+$grey-color-dark:  color.adjust($grey-color, $lightness: -25%);
+
+$content-width:    800px;
+$on-palm:          600px;
+$on-laptop:        800px;
+
+// Mixins (used instead of @extend placeholders for @use compatibility)
+@mixin vertical-rhythm {
+    margin-bottom: $half-spacing;
+}
+
+@mixin clearfix {
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
+}
