@@ -7,13 +7,13 @@ permalink: kaufmann-nietzsche
 description: "Walter Kaufmann's 1960 talk on Nietzsche"
 ---
 
-# Introduction
+## Introduction
 
 There was a question in the discussion last time, which was appropriately asked by a philosopher, that leads us straight into tonight's topic. The question was something like this: seeing that Kierkegaard held such terrible views, why should one study him? Well, you may think, seeing that tonight's topic is *Nietzsche and the Crisis in Philosophy*, that I think that this question is very applicable to Nietzsche. I don't think so particularly. I don't think that his views, for the most part, were so terrible, though a few of them perhaps were. My point is that this question points straight toward the crisis in philosophy.
 
 Last week, when I spoke about Kierkegaard and the crisis in religion, I suggested that there were two factors in particular that accounted for the crisis in religion. One of those is a fairly obvious one in the case of religion, namely the emergence of scientific thinking, which has produced great problems for religion. The other factor was a more nearly timeless factor---namely, organized religion poses a problem for the genuine religious spirit. I shall try to pursue both of these factors now, in relation to philosophy, and begin this lecture by talking about the crisis in philosophy before introducing Nietzsche.
 
-# Science
+## Science
 
 I do think that the first and chief factor of what I consider the crisis in contemporary philosophy has also been introduced by science. After all, if I understand the question rightly, it does show a considerable regard---which is very widely, if not quite universally, shared in our society---a very profound respect for science. In science, we don't study terrible views. In science, we don't deal with people of whom we think that they are clearly wrong. Philosophers today do, on the whole, want to be scientific. They want to emulate the sciences, not for any cheap motives, not because they want to have the same sort of prestige that scientists have, but for the best of motives. Science has made enormous progress for several centuries now, and incredible progress in the lifetime of most of us, and so one wonders whether philosophy could possibly do better than to imitate science.
 
@@ -33,7 +33,7 @@ There are other reasons here, which lead me to the second factor, but let me beg
 
 To mention another equally outstanding British philosopher who died recently, J. L. Austin---he varied the interests of Ryle somewhat by concentrating very largely on things that bordered on lexicography, semantic analysis, analyzing distinctions in ordinary language, hoping that where there are subtle distinctions between words that are apparently synonymous, perhaps some important difference is hidden that might eventually become philosophically important or fruitful, but he found this kind of precise work so absorbing that he very, very rarely indeed bothered to point out its philosophic relevance. The point here is, again, to do something that can be done with precision, to do something that does not involve inspiration but competence, in other words, to emulate the sciences.
 
-# Organization
+## Organization
 
 Now I have said that the other factor, the factor of organization, has also helped to produce the crisis in philosophy, and this, I think, is---if anything---even less obvious than my first point: that science poses a deep and critical problem for philosophy. After all, happily, we don't have organization in philosophy the way we do have it in religion. There's nothing at all unusual for a philosopher going it alone. Of course, there are some little clubs where people get together who happen to agree particularly with each other, but that is the exception rather than the rule, and the whole of philosophy is lucky in not being beset by hierarchies and organizations and all that sort of thing.
 
@@ -49,7 +49,7 @@ Take a young man in his twenties, who in the eighteenth century wrote a book wit
 
 Here, then, we have the contrast, and we actually find some of the professional philosophers, Warnock, for example, in his little book on *English Philosophy Since 1900*, making fun, without naming names, of the amateurs of former ages, and extolling the professional philosophers of our time. I feel that the shoe is a little bit on the other foot, and that amateurs like, for example, Hume and Berkeley, who published their major works when they were still in their twenties, are not people for us to look down on. And I dare say that the reason why young philosophers today don't write books like that is not because those books were so amateurish and so bad, but rather because they were so extremely bold.
 
-# Nietzsche
+## Nietzsche
 
 Now, this is a good point, I think, to introduce the philosopher of the evening, and I will do it with a quotation that relates him immediately to what I have characterized as the crisis in philosophy. Nietzsche writes in *Beyond Good and Evil*, section 212, which is reprinted or translated in full in *The Portable Nietzsche*, that traditionally "the great philosopher has always stood in opposition to his today"---I'm abbreviating the section:
 
@@ -87,7 +87,7 @@ We find the same thing beautifully expressed in a letter to his sister, right at
 
 I think what makes Nietzsche particularly remarkable is that he is a rare embodiment of what I consider the philosophic, the Socratic philosophic spirit. There may be some things about his personality that are not so attractive. In this respect, I think he is thoroughly admirable: in his uninhibited passion for truth and in his rarely equaled craving for intellectual integrity. These are rare qualities; they are not often encountered.
 
-# Nietzsche's Life
+## Nietzsche's Life
 
 I'll be terribly brief about his life and about his personality. Some of the major points may be very well known to most of you, and so there's no need to dwell on them. One thing that is mildly interesting is that Nietzsche's father was born the same year as Kierkegaard, in 1813. I just mention that because it indicates that Nietzsche is really one generation later. He didn't read Kierkegaard. Georg Brandes, who was the first to discover Nietzsche and one of the first to discover Kierkegaard, and also helped to discover such people as Ibsen and Strindberg, called Nietzsche's attention to Kierkegaard in a letter just at the end of Nietzsche's life. And Nietzsche didn't get around anymore to procuring any of Kierkegaard's works.
 
@@ -101,7 +101,7 @@ The insanity, according to most of the people who have studied it posthumously, 
 
 What does matter, what is relevant, is that Nietzsche's works can be shrugged off as the writings of a madman, and this is a popular idea with people who don't know much psychology, with amateur psychologists, but perhaps it's interesting to hear what Freud thought of Nietzsche. Freud said of Nietzsche that he had, and I quote, "a more penetrating knowledge of himself than any other man who ever lived or was ever likely to live." Well, a handsome compliment, I think. I'm not at all sure that it's true, but I find it quite stunning anyway, that he had "a more penetrating knowledge of himself than any other man who ever lived or was ever likely to live." That presumably includes Sigmund Freud himself. He also said of Nietzsche that his "insights often agree in the most amazing manner with the laborious results of psychoanalysis." And that, although in his later years, Freud didn't have any particular enthusiasm for Nietzsche, whose whole temperament was very different from his own in many respects.
 
-# Nietzsche's Books
+## Nietzsche's Books
 
 There's no need, I think, to go over a list here of Nietzsche's books. They're usually divided into three periods. First, things like *The Birth of Tragedy* and the *Untimely Meditations* essays. Then his aphoristic works, the ones that really are aphoristic, that consist of lots of short sections strung together. And then in his final period, first *Thus Spoke Zarathustra*, then *Beyond Good and Evil*, *Genealogy of Morals*. And then finally, in his last year, last conscious year, 1888, he equaled Kierkegaard by writing in one year *The Case of Wagner*, the *Twilight of the Idols*, *The Antichrist*, *Ecce Homo*, and composing, out of things written earlier, *Nietzsche contra Wagner*.
 
@@ -145,7 +145,7 @@ Let me illustrate the analytic element in Nietzsche very briefly, and I will str
 
 But there is, of course, in Nietzsche also a great deal that links him with existentialism, and I'll just enumerate: his literary criticism, something in which Heidegger, Sartre, and Camus have also engaged in a big way; his psychological interests; his critique of Christianity and of Weltanschauungen generally; his analysis of nihilism and of different possible attitudes toward an absurd world, particularly relevant to the sort of thing that Sartre and Camus have done; his celebration that I've read to you of a new greatness of man; and his attempt to cross over from philosophy into literary attempts. It is therefore not surprising that Karl Jaspers should have written two books about Nietzsche, that Heidegger should have written an important essay about him, that Nietzsche's name should be the first name mentioned in Sartre's *Being and Nothingness*, and that Camus has written at length about him too. They're interested in him. They realize that in some sense he is one of theirs.
 
-# Conclusion
+## Conclusion
 
 It's high time for a conclusion, so that there will be time for some discussion. I've said that a philosopher probably should stand somewhere between literature, poetry on the one hand, and science on the other. And I've said if one wants to criticize Nietzsche, one may well say that although this makes him readable and appealing and interesting, he stands a little too far in the direction of out-and-out literature: that there is too little in him of careful summing up, of taking together the different things he has said, and himself comparing them, instead of just leaving it to somebody else to do this, and seeing what stands up, what doesn't stand up, what has to be qualified; there is too little of that.
 
